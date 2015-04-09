@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_background"
+    android:orientation="vertical" >
+
+    <include layout="@layout/head" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/cell_bg_mid"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="个人资料"
+            android:textColor="#C8161E"
+            android:textSize="19sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/home_ll_1"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="5dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center" >
+
+        <EditText
+            android:id="@+id/register_name_edit"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/wo_item_bg"
+            android:focusableInTouchMode="true"
+            android:gravity="right|center_vertical"
+            android:hint="请输入姓名"
+            android:paddingRight="30dp"
+            android:textColor="#5B5B5B"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/register_name_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/register_name_edit"
+            android:layout_alignBottom="@+id/register_name_edit"
+            android:layout_alignLeft="@+id/register_name_edit"
+            android:layout_marginLeft="20dp"
+            android:text="姓名"
+            android:textColor="#8D8D8D"
+            android:textSize="17sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/home_ll_2"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center" >
+
+        <EditText
+            android:id="@+id/register_unit_edit"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/wo_item_bg"
+            android:focusableInTouchMode="true"
+            android:gravity="right|center_vertical"
+            android:hint="请输入单位"
+            android:paddingRight="30dp"
+            android:textColor="#5B5B5B"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/register_unit_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/register_unit_edit"
+            android:layout_alignBottom="@+id/register_unit_edit"
+            android:layout_alignLeft="@+id/register_unit_edit"
+            android:layout_marginLeft="20dp"
+            android:text="所属单位"
+            android:textColor="#8D8D8D"
+            android:textSize="17sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/cell_bg_mid"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="手机验证"
+            android:textColor="#C8161E"
+            android:textSize="19sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/home_ll_3"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="5dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center" >
+
+        <EditText
+            android:id="@+id/register_phone_edit"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/wo_item_bg"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:phoneNumber="true"
+            android:textColor="#5B5B5B"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/register_phone_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/register_phone_edit"
+            android:layout_alignBottom="@+id/register_phone_edit"
+            android:layout_alignLeft="@+id/register_phone_edit"
+            android:layout_marginLeft="20dp"
+            android:text="手机号"
+            android:textColor="#8D8D8D"
+            android:textSize="17sp" />
+
+        <ImageView
+            android:id="@+id/get_phone_code_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/register_phone_edit"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/yanzhengma" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/home_ll_4"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center" >
+
+        <EditText
+            android:id="@+id/register_code_edit"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/wo_item_bg"
+            android:focusableInTouchMode="true"
+            android:gravity="right|center_vertical"
+            android:paddingRight="30dp"
+            android:textColor="#5B5B5B"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/register_code_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/register_code_edit"
+            android:layout_alignBottom="@+id/register_code_edit"
+            android:layout_alignLeft="@+id/register_code_edit"
+            android:layout_marginLeft="20dp"
+            android:text="验证码"
+            android:textColor="#8D8D8D"
+            android:textSize="17sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:gravity="center|center_vertical" >
+
+        <ImageView
+            android:id="@+id/register_commit_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/commit_btn_bg"
+            android:gravity="center" />
+    </LinearLayout>
+
+</LinearLayout>
